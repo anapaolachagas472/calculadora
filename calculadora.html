@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Energética</title>
+    <link rel="stylesheet" href="css/calc.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora Energética</h1>
+        <nav>
+            <ul>
+                <li><a href="#como-funciona">Como Funciona</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Otimize Seu Consumo de Energia Agora!</h2>
+        <p>Descubra como economizar e contribuir para um planeta mais sustentável.</p>
+        <button id="start-btn">Comece Agora</button>
+    </section>
+
+    <section id="calculator">
+        <div class="container">
+            <div class="form-section">
+                <h2>Calculadora Energética</h2>
+                <form id="energy-form">
+                    <div id="form-aparelhos">
+                        <!-- Aparelhos serão adicionados aqui dinamicamente -->
+                    </div>
+                    <button type="button" id="add-aparelho-btn">Adicionar Outro Aparelho</button>
+                    <button type="button" id="calcular-btn">Calcular</button>
+                </form>
+            </div>
+            <div class="results-section">
+                <h3>Resultados</h3>
+                <p>Consumo Estimado: <span id="consumo">0 kWh</span></p>
+                <p>Custo Estimado: <span id="custo">R$ 0,00</span></p>
+                <canvas id="energyChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="savings-tips" class="hidden">
+        <div class="container">
+            <h2>Dicas para Economizar Energia</h2>
+            <ul>
+                <li>Substitua lâmpadas incandescentes por LEDs.</li>
+                <li>Desligue aparelhos eletrônicos quando não estiverem em uso.</li>
+                <li>Use sensores de movimento para iluminação em áreas de passagem.</li>
+                <li>Invista em eletrodomésticos de baixo consumo energético.</li>
+                <li>Otimize o uso do ar-condicionado, ajustando a temperatura ideal.</li>
+            </ul>
+            <button id="back-btn">Voltar para a Calculadora</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Calculadora Energética. Todos os direitos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
